@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaUsers, FaRocket, FaLightbulb } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function About() {
   return (
+    <>
     <section className="about-section">
       <div className="container">
         <h1>About Zuree Global</h1>
@@ -62,6 +64,8 @@ function About() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

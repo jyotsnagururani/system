@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css";
+import Footer from '../components/Footer';
 
 const allTestimonials = [
   { id: 1, name: 'CEO A', role: 'CEO', feedback: 'Amazing support!', photo: '/images/ceo-a.jpg' },
@@ -10,6 +11,7 @@ const allTestimonials = [
 
 function AllTestimonials() {
   return (
+    <>
     <section className="section all-testimonials">
       <h2>All Testimonials</h2>
       <div className="testimonial-list">
@@ -23,6 +25,8 @@ function AllTestimonials() {
         ))}
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

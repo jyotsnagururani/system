@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 function Privacy() {
   return (
+    <>
     <div className="privacy-container" style={{ padding: '2rem' }}>
       <h1>Privacy Policy</h1>
       <p>
@@ -14,6 +16,8 @@ function Privacy() {
         <li>You can contact us at any time to review or delete your data.</li>
       </ul>
     </div>
+    <Footer />
+    </>
   );
 }
 

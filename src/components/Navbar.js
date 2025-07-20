@@ -21,10 +21,9 @@ function Navbar() {
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/business-wings">BusinessWings</Link></li>
         <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
-        <li><Link to="/get-in-touch">Get in Touch</Link></li>
+        <li><Link to="/get-in-touch">GetInTouch</Link></li>
       </ul>
     </nav>
   );

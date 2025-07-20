@@ -1,17 +1,27 @@
 import React from 'react';
+import Footer from '../components/Footer';
+
+const services = [
+  "IoT Devices & Ecosystem",
+  "Application Development & Services",
+  "Telecom-Design & Transformation",
+  "Boutique Online & Bulk Contract Manufacturing",
+  "Talent Management",
+];
 
 function BusinessWings() {
   return (
-    <section className="business-wings">
-      <h2>Business Wings</h2>
-      <div className="wings-container">
-        <div className="wing-item">IoT Devices & Ecosystem</div>
-        <div className="wing-item">Application Development & Services</div>
-        <div className="wing-item">Telecom - Design & Transformation</div>
-        <div className="wing-item">Boutique Online & Bulk Contract Manufacturing</div>
-        <div className="wing-item">Talent Management</div>
+    <>
+    <section className="services">
+      <h1>Business Wings</h1>
+      <div className="services-grid">
+        {services.map((service, idx) => (
+          <div className="service-box" key={idx}>{service}</div>
+        ))}
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function Terms() {
   const [accepted, setAccepted] = useState(null);
@@ -18,6 +19,7 @@ function Terms() {
   };
 
   return (
+    <>
     <div className="terms-container" style={{ padding: '2rem' }}>
       <h1>Terms & Conditions</h1>
       <p>
@@ -38,6 +40,8 @@ function Terms() {
         </button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
