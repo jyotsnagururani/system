@@ -15,7 +15,7 @@ function Terms() {
   const handleDecline = () => {
     setAccepted(false);
     alert('You declined the Terms & Conditions.');
-    navigate('/'); // or navigate to a different page
+    navigate('/'); 
   };
 
   return (

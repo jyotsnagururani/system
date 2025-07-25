@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import testimonialsImg from '../image/Person.jpg';
 
 function Testimonials() {
   return (

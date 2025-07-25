@@ -1,10 +1,21 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import '../App.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import '../App.css'; 
+
+const images = [
+  { src: 'https://picsum.photos/id/1018/600/400/', link: 'https://picsum.photos/id/1018/600/400/' },
+  { src: 'https://picsum.photos/id/1015/600/400/', alt: 'Nature 2', link: 'https://picsum.photos/id/1015/600/400/' },
+  { src: 'https://picsum.photos/id/1019/600/400/', alt: 'Nature 3', link: 'https://picsum.photos/id/1019/600/400/' },
+  { src: 'https://picsum.photos/id/1020/600/400/', alt: 'Nature 4', link: 'https://picsum.photos/id/1020/600/400/' },
+  { src: 'https://picsum.photos/id/1021/600/400/', alt: 'Nature 5', link: 'https://picsum.photos/id/1021/600/400/' }
+];
 
 const Home = () => (
   <>
-
     <section className="hero">
       <div className="hero-text">
         <h1>Enabling Entity Towards Connected World</h1>
@@ -14,12 +25,41 @@ const Home = () => (
           and looks to expand across fast growing markets in Asia.
         </p>
       </div>
-      <img src="/images/hero-image.jpg" alt="Zuree Company" />
+
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        navigation
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        spaceBetween={20}
+        slidesPerView={2}
+        breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          640: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
+        }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <a className="carousel-slide-link" href={image.link} target="_blank" rel="noopener noreferrer">
+              <img src={image.src} alt={image.alt || `Slide ${index + 1}`} />
+              <h3>Headlining Hard</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                varius enim in eros elementum tristique.
+              </p>
+            </a>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
 
     <section className="services-overview">
       <h2>Exploring our tailored services for your business</h2>
-      <img src="/images/quality-service.jpg" alt="Quality" />
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+        alt="Quality"
+      />
     </section>
 
     <section className="business-wings">
@@ -63,7 +103,7 @@ const Home = () => (
         </div>
       </div>
       <div className="center-btn">
-        <a href="/projects" className="btn">View All Projects</a>
+        <a className="btn" href="/projects">View All Projects</a>
       </div>
     </section>
 
@@ -84,7 +124,7 @@ const Home = () => (
         </div>
       </div>
       <div className="center-btn">
-        <a href="/testimonials" className="btn">See All</a>
+        <a className="btn" href="/testimonials">See All</a>
       </div>
     </section>
 
