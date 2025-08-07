@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
-import "../App.css"; 
+import "../App.css";
 
 function Terms() {
   const [accepted, setAccepted] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   const handleAccept = () => {
     setAccepted(true);
     alert("You accepted the Terms & Conditions.");
-    navigate("/");
+    navigate("/system");
   };
 
   const handleDecline = () => {
     setAccepted(false);
     alert("You declined the Terms & Conditions.");
-    navigate("/");
+    navigate("/system");
   };
 
   return (

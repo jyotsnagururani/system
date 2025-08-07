@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import projectImage from "../image/Project.jpg";
 
@@ -37,7 +37,7 @@ const projects = [
 
 function HighlightProjects() {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when page loads
+    window.scrollTo(0, 0);
   }, []);
 
   return (

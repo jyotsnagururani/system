@@ -26,7 +26,7 @@ function Footer() {
           <h4>Important Links</h4>
           <ul className="footer-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/system">Home</Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
