@@ -24,7 +24,7 @@ function Navbar() {
     <nav className={`navbar ${darkMode ? "dark" : "light"}`}>
       <div className="navbar-top">
         <div className="logo">
-          <Link to="/" onClick={closeMenu}>
+          <Link to="/system" onClick={closeMenu}>
             <img src={image} alt="Zuree Global" />
           </Link>
         </div>
