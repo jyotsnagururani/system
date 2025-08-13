@@ -7,26 +7,31 @@ import "swiper/css/navigation";
 import "../App.css";
 
 const heroImages = [
-  { src: 'https://picsum.photos/id/1018/600/400/', 
-    alt: "Telecommunications tower red-white structure", 
-    link: 'https://picsum.photos/id/1018/600/400/' 
+  {
+    src: "https://picsum.photos/id/1018/600/400/",
+    alt: "Telecommunications tower red-white structure",
+    link: "https://picsum.photos/id/1018/600/400/",
   },
-  { src: 'https://picsum.photos/id/1015/600/400/', 
-    alt: "Close-up cellular antenna tower", 
-    link: 'https://picsum.photos/id/1015/600/400/' 
+  {
+    src: "https://picsum.photos/id/1015/600/400/",
+    alt: "Close-up cellular antenna tower",
+    link: "https://picsum.photos/id/1015/600/400/",
   },
-  { src: 'https://picsum.photos/id/1019/600/400/', 
-    alt: "Transmission mast near greenery", 
-    link: 'https://picsum.photos/id/1019/600/400/' 
+  {
+    src: "https://picsum.photos/id/1019/600/400/",
+    alt: "Transmission mast near greenery",
+    link: "https://picsum.photos/id/1019/600/400/",
   },
-  { src: 'https://picsum.photos/id/1020/600/400/', 
-    alt: "Antenna cluster telecom tower", 
-    link: 'https://picsum.photos/id/1020/600/400/' 
+  {
+    src: "https://picsum.photos/id/1020/600/400/",
+    alt: "Antenna cluster telecom tower",
+    link: "https://picsum.photos/id/1020/600/400/",
   },
-  { src: 'https://picsum.photos/id/1021/600/400/', 
-    alt: "Cellular tower with orange dish receivers", 
-    link: 'https://picsum.photos/id/1021/600/400/' 
-  }
+  {
+    src: "https://picsum.photos/id/1021/600/400/",
+    alt: "Cellular tower with orange dish receivers",
+    link: "https://picsum.photos/id/1021/600/400/",
+  },
 ];
 
 const serviceImages = [
@@ -109,7 +114,7 @@ const projects = [
     title: "Analytical Dashboard",
     image: "https://source.unsplash.com/featured/?dashboard,data",
     link: "/projects",
-  }, 
+  },
 ];
 
 const Home = () => {
