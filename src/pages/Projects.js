@@ -35,7 +35,7 @@ const projects = [
   },
 ];
 
-function HighlightProjects() {
+function Projects() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -59,4 +59,4 @@ function HighlightProjects() {
   );
 }
 
-export default HighlightProjects;
+export default Projects;

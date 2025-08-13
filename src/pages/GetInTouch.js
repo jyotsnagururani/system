@@ -1,12 +1,25 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import "../App.css";
 import Footer from "../components/Footer";
 
 function GetInTouch() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Show popup success message
+    alert("Message sent successfully!");
+
+    // Redirect to homepage
+    navigate("/");
+  };
 
   return (
     <>
@@ -85,7 +98,8 @@ function GetInTouch() {
           {/* Contact Form */}
           <div className="contact-form">
             <h2>Send a Message</h2>
-            <form>
+
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name">Your Name</label>
               <input
                 type="text"
