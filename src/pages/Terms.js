@@ -14,13 +14,13 @@ function Terms() {
   const handleAccept = () => {
     setAccepted(true);
     alert("You accepted the Terms & Conditions.");
-    navigate("/");
+    navigate("/system");
   };
 
   const handleDecline = () => {
     setAccepted(false);
     alert("You declined the Terms & Conditions.");
-    navigate("/");
+    navigate("/system");
   };
 
   return (

@@ -18,7 +18,7 @@ function GetInTouch() {
     alert("Message sent successfully!");
 
     // Redirect to homepage
-    navigate("/");
+    navigate("/system");
   };
 
   return (
